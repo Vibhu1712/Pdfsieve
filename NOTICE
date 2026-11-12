@@ -1,0 +1,7 @@
+pdfsieve
+Copyright 2026 Vaibhav Rawat (AdRaw App Studio)
+
+This product is licensed under the Apache License, Version 2.0 (see LICENSE).
+It reads PDF pages: words, characters, lines, shapes and images with coordinates.
+
+Originally developed as part of docextract by AdRaw App Studio.

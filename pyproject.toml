@@ -1,0 +1,45 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pdfsieve"
+version = "0.1.0"
+description = "Read characters, words, lines, shapes and images from PDF pages with exact coordinates. Pure Python, permissively licensed (pdfminer.six underneath)."
+readme = "README.md"
+requires-python = ">=3.9"
+license = "Apache-2.0"
+license-files = ["LICENSE", "NOTICE", "THIRD_PARTY_NOTICES.md"]
+authors = [{ name = "Vaibhav Rawat (AdRaw App Studio)" }]
+keywords = ["pdf", "text extraction", "word coordinates", "pdfminer", "table borders", "pdf parsing", "document ai"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3 :: Only",
+    "Topic :: Text Processing :: General",
+    "Topic :: Office/Business",
+    "Typing :: Typed",
+]
+dependencies = ["pdfminer.six>=20240706"]
+
+[project.optional-dependencies]
+test = ["pytest>=7", "reportlab>=4; python_version >= '3.10'", "reportlab>=4,<=4.5.0; python_version < '3.10'"]
+
+[project.scripts]
+pdfsieve = "pdfsieve.__main__:main"
+
+[project.urls]
+Homepage = "https://github.com/YOUR-GITHUB-USER/pdfsieve"
+Issues = "https://github.com/YOUR-GITHUB-USER/pdfsieve/issues"
+Changelog = "https://github.com/YOUR-GITHUB-USER/pdfsieve/blob/main/CHANGELOG.md"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+pdfsieve = ["py.typed"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
