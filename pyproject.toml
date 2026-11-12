@@ -31,9 +31,9 @@ test = ["pytest>=7", "reportlab>=4; python_version >= '3.10'", "reportlab>=4,<=4
 pdfsieve = "pdfsieve.__main__:main"
 
 [project.urls]
-Homepage = "https://github.com/YOUR-GITHUB-USER/pdfsieve"
-Issues = "https://github.com/YOUR-GITHUB-USER/pdfsieve/issues"
-Changelog = "https://github.com/YOUR-GITHUB-USER/pdfsieve/blob/main/CHANGELOG.md"
+Homepage = "https://github.com/Vibhu1712/pdfsieve"
+Issues = "https://github.com/Vibhu1712/pdfsieve/issues"
+Changelog = "https://github.com/Vibhu1712/pdfsieve/blob/main/CHANGELOG.md"
 
 [tool.setuptools.packages.find]
 where = ["src"]
